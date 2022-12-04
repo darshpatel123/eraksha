@@ -3,6 +3,9 @@ html{
     
 }
 body{
+  cursor: url("filled-circle.cur") , default;
+  min-height: 200vh;
+
   width: 100%;
   background-image: url("Images/Y0LUPc.png");
 
@@ -41,17 +44,17 @@ body{
     width: 10px;
   }
   
-  /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    opacity: 0;
+ background-color: blue;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    transition: 10s;
+    border-radius: 20px;
     background: #888;
   }
-  
+
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: green;
@@ -142,4 +145,29 @@ border-color: orange;
     margin: 4px 2px;
     animation:mymove 2s;
 
+}
+.h1pro{
+  font-size: 300%;
+  transition: 0.2;
+}
+.h1pro:hover{
+font-size: 500%;
+color:wheat
+}
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  width: 0%;
+  height: 4px;
+  background: #7983ff;
+  z-index: 10000;
+}
+a:hover{
+  cursor: url("filled-circle.cur") , default;
+
+}
+button:hover{
+  cursor: url("filled-circle.cur") , default;
+ 
 }

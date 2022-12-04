@@ -12,7 +12,10 @@
         <title>eRaksha</title>
         <link rel="icon" type="image/x-icon" href="/images/Eraksha.jpg">
     </head>
-    <body><center>
+    <div id="scroll-progress"></div>
+      <center>
+
+
        <b><button id="h1main">eRaksha Competition 2022 -23<br> 
         <b style="color: black ;">Promoting  Safe, Responsible and Peaceful Cyber Space</b>
 
@@ -31,14 +34,13 @@
     
                          color: white;" class="bi bi-chevron-double-up"></i></a></div>
         <center><div id="CybSpace">
-        <h1 style="color:white;"><b>What is cyberspace?</b> </h1>
+        <h1  class="h1pro" style="color:white;"><b>What is cyberspace?</b> </h1>
        
         <div class="divinfo"><h1 >Cyberspace</h1>
             <p><b>The best way to define Cyberspace is the virtual and dynamic space created by the machine clones.According to the Cyberspace definition, it is a web consisting of consumer computers, electronics and communication networks by which the consumer is connected to the world.</b></p> </div>
     </div>
-    <hr style="background-color:white;">
-    <div>
-        <h1 style="color:white;"><b>Safe Cyber Space</b> </h1>
+    <div id="maindiv"><div>
+        <h1 class="h1pro" style="color:white;"><b>Safe Cyber Space</b> </h1>
        
         <div class="divinfo"><h1 >Precautions to be taken in Cyber space</h1>
             <p><b>• Be cautious while opening attachments or visiting links.<br>
@@ -46,11 +48,23 @@
                 • Keep your passwords secure.<br>
                 • Guard your belongings!</b></p></div></div>
        <div>
-            <h1 style="color:white;"><b>Peaceful Cyber Space</b> </h1>
+            <h1 class="h1pro" style="color:white;"><b>Peaceful Cyber Space</b> </h1>
                    
                     <div class="divinfo"><h1 >Peaceful cyber space</h1>
                         <p><b>Tax evasion, cyberbullying, and online libel are additional threats. For instance, the first cyberattack occurred in Estonia, where the malicious use of bots caused the websites of the Parliament, the Ministry of Finance, and several banks to become inaccessible. This highlights the necessity of fostering a secure and peaceful cyberspace.</b></p></div></div>
               
     </div></center>
+
+        <script>const scrollProgress = document.getElementById('scroll-progress');
+            const height =
+              document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            
+            window.addEventListener('scroll', () => {
+              const scrollTop =
+                document.body.scrollTop || document.documentElement.scrollTop;
+              scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+            });</script>
+
+    
     </body>
 </html>
