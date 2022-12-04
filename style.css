@@ -1,0 +1,140 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+#h2main {
+
+    transition: 2s;
+    font-family: 'Pacifico', cursive;
+    opacity: 0.5;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 200%;
+    margin: 4px 2px;
+    animation:mymove 2s;
+
+} 
+#btscrool {
+    font-family: 'Pacifico', cursive;
+    border: none;
+    color: #AA336A;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 200%;
+    margin: 4px 2px;
+    margin-top: 400px;
+
+    transition: 0.3s;
+
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    transition: 10s;
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: green;
+  }
+   
+
+#h2main:hover{
+opacity: 1;
+}
+#h1main {
+    
+    font-family: 'Pacifico', cursive;
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 200%;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+
+}
+#h1main:hover {
+font-size:300%;
+opacity: 1;
+}
+#scrdbtn{
+  transition: 2s;
+  opacity: 0.5;
+  font-size: 30px;
+}
+#scrdbtn:hover{opacity: 1;
+font-size: 40px;
+}
+#headingmain {
+
+    transition: 2s;
+    font-family: 'Pacifico', cursive;
+    opacity:1 ;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 200%;
+    margin: 4px 2px;
+    animation:mymove 2s;
+
+}
+.divinfo{
+font-size: 20px;
+
+background-color:#ff5500;
+color:white;
+width: 50%;
+
+border: solid;
+border-width: 10px;
+border-radius: 5px;
+border-color: orange;
+}
+.divinfo{
+    transition: 3s;
+    opacity: 0.5;
+    font-size: 20px;
+    
+    background-color:#ff5500;
+    color:white;
+    width: 50%;
+    
+    border: solid;
+    border-width: 10px;
+    border-radius: 5px;
+    border-color: orange;
+    }
+.divinfo:hover{
+    opacity: 1;
+}
+.divinfo.p,h1{
+    
+    transition: 2s;
+    font-family: 'Pacifico', cursive;
+    opacity:1 ;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 200%;
+    margin: 4px 2px;
+    animation:mymove 2s;
+
+}
