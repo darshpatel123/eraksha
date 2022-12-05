@@ -10,12 +10,13 @@
         <script src="https://kit.fontawesome.com/f65316257a.js" crossorigin="anonymous"></script>        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+        <script src="index.js" type="module"></script>
 
         <title>eRaksha</title>
         <link rel="icon" type="image/x-icon" href="/images/Eraksha.jpg">
     </head>
     <body>
-    <div id="scroll-progress"></div>
+    <div class="scroll-tracker"></div>
       <center>
 
 
@@ -24,25 +25,15 @@
 
     </button></b> 
     <h1 style="color:white;" id="h2main"><span class="auto-type"></span></h1>
-    <a href="#CybSpace" style="text-decoration:none;"><button id="btscrool">Scroll down</button>
-        <i id="scrdbtn" style="color:white;" class="bi bi-chevron-down"></i></a></center>
-    <div><a style="text-decoration:none;" href="#"><i id="scrdbtn" style="
-        
-        bottom: 5%;
-        right: 2%;
-        position: fixed;
-         height: 30px;
-        width: 30px;   
-    
-    
-                         color: white;" class="bi bi-chevron-double-up"></i></a></div>
-        <center><div id="CybSpace">
+    <div data-aos="fade-up"><a  href="#CybSpace" style="text-decoration:none;"><button id="btscrool">Scroll down</button>
+        <i id="scrdbtn" style="color:white;" class="bi bi-chevron-down"></i></a></div></center>
+        <center><div  data-aos="fade-down-left" id="CybSpace">
         <h1  class="h1pro" style="color:white;"><b>What is cyberspace?</b> </h1>
        
         <div class="divinfo"><h1 >Cyberspace</h1>
             <p><b>The best way to define Cyberspace is the virtual and dynamic space created by the machine clones.According to the Cyberspace definition, it is a web consisting of consumer computers, electronics and communication networks by which the consumer is connected to the world.</b></p> </div>
     </div>
-    <div id="maindiv"><div>
+    <div data-aos="fade-down-right" id="maindiv"><div>
         <h1 class="h1pro" style="color:white;"><b>Safe Cyber Space</b> </h1>
        
         <div class="divinfo"><h1 >Precautions to be taken in Cyber space</h1>
@@ -50,7 +41,7 @@
                 • Confirm requests for personal data.<br>
                 • Keep your passwords secure.<br>
                 • Guard your belongings!</b></p></div></div>
-       <div>
+       <div data-aos="fade-down-left">
             <h1 class="h1pro" style="color:white;"><b>Peaceful Cyber Space</b> </h1>
                    
                     <div class="divinfo"><h1 >Peaceful cyber space</h1>
@@ -58,12 +49,16 @@
               
     </div></center>
 
-        <script>var typed = new Typed(".auto-type" , {
+        <script>
+        
+        var typed = new Typed(".auto-type" , {
             strings:["Made by Darsh Patel"],
             typeSpeed:100    
         })
      </script>
-
+<script>
+    AOS.init();
+  </script>
     
     </body>
     
