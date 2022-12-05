@@ -1,3 +1,12 @@
+
+@keyframes h1m {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+}
 html{
     scroll-behavior: smooth;
     
@@ -27,6 +36,7 @@ body{
 
 } 
 #btscrool {
+
     font-family: 'Pacifico', cursive;
     border: none;
     color: #AA336A;
@@ -65,6 +75,8 @@ body{
 opacity: 1;
 }
 #h1main {
+    animation-name:h1m;
+    animation-duration: 8s;
     font-family: 'Pacifico', cursive;
     background-color: #f4511e;
     border: none;
@@ -163,11 +175,11 @@ color:wheat
   background: #7983ff;
   z-index: 10000;
 }
-a:hover{
+a{
   cursor: url("filled-circle.cur") , default;
 
 }
-button:hover{
+button{
   cursor: url("filled-circle.cur") , default;
  
 }
